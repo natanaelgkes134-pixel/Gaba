@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assistente Sala do Futuro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Assistente Sala do Futuro</h1>
+    <p>Envie uma imagem para extrair o texto.</p>
+
+    <input type="file" id="imageInput" accept="image/*">
+
+    <button id="readButton">Ler imagem</button>
+
+    <p id="status"></p>
+    <textarea id="result" placeholder="O texto reconhecido aparecerá aqui..."></textarea>
+
+    <button id="copyButton">Copiar texto</button>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
